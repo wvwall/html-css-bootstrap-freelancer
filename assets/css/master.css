@@ -1,10 +1,16 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .navbar {
   background-color: #2C3E50;
   height: 70px;
-
+  margin-bottom: 0;
 }
 .navbar-brand {
   color: #fff;
@@ -25,6 +31,11 @@
   color: #fff;
   line-height: 35px;
 }
+.text_upper a:hover{
+  color: #1ABC9C;
+  background-color: none;
+}
+
 .navbar-toggle {
   margin-right: 0;
 }
@@ -33,4 +44,40 @@
 }
 .text_center {
   text-align: center;
+}
+.start {
+  color: #fff;
+  font-size: 30px;
+}
+.avatar p {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+.fa-star {
+  color: #fff;
+  font-size: 35px;
+}
+.star {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cards {
+  background-color: #FFFFFF;
+}
+.cards h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.star_blue {
+  color: #2C3E50;
+}
+.cards img {
+  display: block;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 25px;
 }
