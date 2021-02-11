@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/master.css">
   <title>WVWALL_START_BOOTSTRAP</title>
@@ -35,6 +35,7 @@
               </ul>
             </div><!-- /.navbar-collapse -->
       </nav>
+      <main>
       <section class="bg_jumbo">
         <div class="container">
           <div class="row ">
@@ -46,12 +47,11 @@
                 <i class="fas fa-star"></i>
                 <div class="line"></div>
               </div>
-              <p>Graphic Artist - Web Designer - <br> Illustrator</p>
+              <p>Graphic Artist - Web Designer - Illustrator</p>
             </div>
           </div>
         </div>
       </header>
-      </main>
         <section class="cards">
           <div class="row">
             <div class="col-xs-12">
@@ -98,7 +98,7 @@
               <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
             </div>
             <div class="col-xs-12">
-              <a class="btn btn-xl btn-outline-light free_d" href="#">
+              <a id="but" class="btn btn-xl btn-outline-light free_d" href="#">
                 <i class="fas fa-download "> </i>
                 <span>Free Download!</span>
               </a>
@@ -106,6 +106,82 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="row">
+          <div class="col-xs-12 text_center">
+            <h2>CONTACT ME</h2>
+            <div class="col-12 star">
+              <div class="line blu"></div>
+              <i class="fas fa-star star_blue"></i>
+              <div class="line blu"></div>
+              <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                  <div class="control-group">
+                      <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <label>Name</label>
+                          <input class="form-control" id="name" type="text" placeholder="" required="required" data-validation-required-message="Please enter your name.">
+                          <p class="help-block text-danger"></p>
+                      </div>
+                  </div>
+                  <div class="control-group">
+                      <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <label>Email Address</label>
+                          <input class="form-control" id="email" type="email" placeholder="" required="required" data-validation-required-message="Please enter your email address." aria-invalid="false">
+                          <p class="help-block text-danger"></p>
+                      </div>
+                  </div>
+                  <div class="control-group">
+                      <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <label>Phone Number</label>
+                          <input class="form-control" id="phone" type="tel" placeholder="" required="required" data-validation-required-message="Please enter your phone number." aria-invalid="false">
+                          <p class="help-block text-danger"></p>
+                      </div>
+                  </div>
+                  <div class="control-group">
+                      <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <label>Message</label>
+                          <textarea class="form-control" id="message" rows="5" placeholder="" required="required" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+                          <p class="help-block text-danger"></p>
+                      </div>
+                  </div>
+                  <br>
+                  <div id="success"></div>
+                  <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="bg_b">
+        <div class="row text_center">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h3 class=" text-uppercase text_center" >location</h3>
+            <p class="lead mb-0">  2215 John Daniel Drive Clark, MO 65243</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h3 class=" text-uppercase text_center" >around the web</h3>
+            <span class="square"><i class="fab fa-facebook-f"></i></span>
+            <span class="square"><i class="fab fa-google-plus-g"></i></span>
+            <span class="square"><i class="fab fa-twitter"></i></span>
+            <span class="square"><i class="fab fa-linkedin-in"></i></span>
+
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h3 class=" text-uppercase text_center" >about freelancer</h3>
+            <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by <span id="start_b">Start Bootstrap</span>.</p>
+          </div>
+        </div>
+      </section>
+      <section class="bg_bb">
+        <div class="row text_center">
+          <div class="col-xs-12 ">
+            <span>Copyright © Your Website 2020</span>
+          </div>
+        </div>
+      </section>
+    </footer>
+
   </div>
 
 
