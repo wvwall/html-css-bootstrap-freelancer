@@ -11,13 +11,17 @@
   background-color: #2C3E50;
   height: 70px;
   margin-bottom: 0;
+
 }
 .navbar-brand {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
   line-height: 35px;
+  background-color: none;
+
 }
+
 .fa-bars {
   color: gray;
   font-size: 20px;
@@ -27,13 +31,14 @@
   border-radius: 5px;;
 }
 .text_upper li a {
+  vertical-align: middle;
   text-transform: uppercase;
   color: #fff;
   line-height: 35px;
+  background-color: none;
 }
 .text_upper a:hover{
   color: #1ABC9C;
-  background-color: none;
 }
 
 .navbar-toggle {
@@ -47,37 +52,96 @@
 }
 .start {
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: bold;
 }
 .avatar p {
   font-size: 18px;
   text-align: center;
   color: #fff;
+  margin-bottom: 80px;
 }
 .fa-star {
   color: #fff;
   font-size: 35px;
+  vertical-align: middle;
 }
 .star {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 .cards {
   background-color: #FFFFFF;
 }
 .cards h2 {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 35px;
+  font-weight: bold;
 }
 .star_blue {
   color: #2C3E50;
 }
+.line {
+  display: inline-block;
+  vertical-align: middle;
+  height: 3px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.blu {
+  background-color: #2C3E50;
+}
+
+img {
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10%;
+}
 .cards img {
   display: block;
-  height: 250px;
+  height: 220px;
   margin: 0 auto;
   border-radius: 10px;
   margin-bottom: 25px;
+}
+.cards img:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(26, 188, 156, 0.9);
+  opacity: 0.5;
+}
+.bg_g {
+  margin-top: 50px;
+  background-color: #1ABC9C;
+}
+
+.fa-download {
+  color: #fff;
+  font-size: 25px;
+}
+.bg_g p {
+  text-align: justify;
+  color: #fff;
+  font-size: 20px;
+  padding: 0 20px;
+}
+.btn-outline-light {
+  border: 2px solid #fff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.bg_g span {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.start {
+  margin-top: 80px;
 }
