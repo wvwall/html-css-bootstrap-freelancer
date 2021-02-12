@@ -265,7 +265,9 @@ footer .col-xs-12,.col-sm-4 {
   opacity: 0.4;
 }
 
-
+.text_upper li a:hover{
+  background-color:  #2C3E50;
+}
 /* MEDIA QUERIES */
 
 @media all and (min-width:992px) {
