@@ -18,22 +18,22 @@
   background-color: #2C3E50;
   height: 70px;
   margin-bottom: 0;
-
 }
 .navbar-brand {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   line-height: 35px;
   background-color: none;
-
 }
-
+.avatar {
+  margin-top: 70px;
+}
 .fa-bars {
-  color: gray;
+  color: #fff;
   font-size: 20px;
   line-height: 35px;
-  border: 1px solid #fff;
+  border: 1px solid #2C3E50;
   padding: 0 12px;
   border-radius: 5px;;
 }
@@ -50,6 +50,10 @@
 
 .navbar-toggle {
   margin-right: 0;
+  background-color: #1ABC9C;
+  padding: 0;
+  margin-top: 15px;
+  margin-right: 15px;
 }
 .bg_jumbo {
   background-color: #1ABC9C;
@@ -117,10 +121,31 @@ img {
   border-radius: 10px;
   margin-bottom: 25px;
 }
+.my_hover {
+  position: relative;
+  width: 305px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.my_hover:hover {
+  background-color: #1ABC9C;
+  opacity: 1;
+}
+.my_hover:hover .fa-plus {
+  display: block;
+}
+
+.fa-plus {
+  color: #fff;
+  position: absolute;
+  font-size: 80px;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
 .cards img:hover {
-  transition: all 0.2s ease-in-out;
-  background-color: rgba(26, 188, 156, 0.9);
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .bg_g {
   margin-top: 50px;
@@ -158,6 +183,9 @@ img {
 label {
   display: block;
   text-align: left;
+  opacity: 0.8;
+  font-size: 20px;
+  font-weight: 400;
 }
 form {
   margin-top: 10%;
@@ -183,7 +211,8 @@ form {
 
 .bg_b i{
   font-size: 20px;
-  margin-top: 14px;
+  margin-top: 13px;
+  opacity: 0.9;
 }
 .square {
   display: inline-block;
@@ -191,6 +220,7 @@ form {
   height: 50px;
   border: 2px solid #fff;
   border-radius: 50%;
+  margin: 1%;
 }
 #start_b {
   color: #1ABC9C;
@@ -218,4 +248,67 @@ footer .row  {
 }
 footer .col-xs-12,.col-sm-4 {
   padding: 0 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width:768px) {
+  .my_hover:active {
+    background-color: #1ABC9C;
+    opacity: 1;
+  }
+  .my_hover:active .fa-plus {
+    display: block;
+  }
+  .cards img:active {
+    opacity: 0.4;
+  }
+ }
+@media all and (min-width:992px) {
+  .start {
+    font-size: 65px;
+  }
+  .start_2 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 65px;
+  }
+  .cards h2 {
+    font-size: 40px;
+    font-weight: 500;
+
+  }
+  .form-group button {
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    background-color: #1ABC9C;
+    border: none;
+    padding: 20px 35px;
+    border-radius: 8px;
+  }
+  #social {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .bg_g .lead_l {
+    padding-left: 250px;
+  }
+  .bg_g .lead_r {
+    padding-right: 250px;
+  }
+  img {
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10%;
+  }
+
 }
